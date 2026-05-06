@@ -5,7 +5,6 @@ long long minimumOperations(vector<int>& arr, int k) {
 
     int n = arr.size();
 
-    // Check if transformation is possible
     int rem = arr[0] % k;
 
     for (int num : arr) {
@@ -14,7 +13,6 @@ long long minimumOperations(vector<int>& arr, int k) {
         }
     }
 
-    // Median gives minimum operations
     sort(arr.begin(), arr.end());
 
     int target = arr[n / 2];
